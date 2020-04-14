@@ -1,0 +1,104 @@
+/*------------------------------------------Spinner styling --------------------------------------------------*/
+   .mul8 {
+      height: 80px;
+      width: 80px;
+   } 
+     
+   .mul8circ1 {
+      height: 70px;
+      width: 70px;
+      border-radius: 50%;
+      border: 8px solid #76cbad;
+      border-bottom-color: rgba(0,0,0,0);
+      border-top-color: rgba(0,0,0,0);
+      -webkit-animation: mul8circ1Anim 2s infinite linear;
+      animation: mul8circ1Anim 2s infinite linear;
+      position: absolute;
+   } 
+     
+   .mul8circ2 {
+      height: 70px;
+      width: 70px;
+      border-radius: 50%;
+      border: 8px solid #127961;
+      border-bottom-color: rgba(0,0,0,0);
+      border-top-color: rgba(0,0,0,0);
+      -webkit-animation: mul8circ2Anim 2.5s infinite linear;
+      animation: mul8circ2Anim 2.5s infinite linear;
+      position: absolute;
+   }
+      
+   @-webkit-keyframes mul8circ1Anim {
+      0% {
+         -webkit-transform: rotate(0deg);
+         transform: rotate(0deg);
+      }
+      100% {
+         -webkit-transform: rotate(360deg);
+         transform: rotate(360deg);
+      }
+   }  
+    
+   @keyframes mul8circ1Anim {
+      0% {
+         -webkit-transform: rotate(0deg);
+         transform: rotate(0deg);
+      }
+      100% {
+         -webkit-transform: rotate(360deg);
+         transform: rotate(360deg);
+      }
+   } 
+     
+   @-webkit-keyframes mul8circ2Anim {
+      0% {
+         -webkit-transform: rotate(0deg);
+         transform: rotate(0deg);
+      }
+      100% {
+         -webkit-transform: rotate(360deg);
+         transform: rotate(360deg);
+      }
+   } 
+     
+   @keyframes mul8circ2Anim {
+      0% {
+         -webkit-transform: rotate(0deg);
+         transform: rotate(0deg);
+      }
+      100% {
+         -webkit-transform: rotate(360deg);
+         transform: rotate(360deg);
+      }
+   }
+  .spinnerWrapper{
+  width:200px;
+  padding-top:50vh;
+  margin:0 auto;
+  margin-top:-100px;
+  }
+  .mul8{
+  margin:0 auto;
+  }
+  .spinnerText{
+    font-size:18px;
+	text-align:center;
+	letter-spacing: 2px;
+  }
+  .textContainer{
+	padding-top:30px;
+	display:block;
+  }
+  .coverScreen
+  {
+    position: fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.8);
+	z-index:10000;
+  }
+ /*-----------------------------------------------------------------------------------*/

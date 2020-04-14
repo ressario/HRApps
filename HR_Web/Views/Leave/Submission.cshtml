@@ -1,87 +1,114 @@
 ﻿
 
-    <div class="row">
-        <div class="col-md-6" style="text-align: center;">
-            <h3>Pengajuan Cuti</h3>
-        </div>
-    </div>
-    <br />
-    <br />
-    <div class="row">
-        <div class="col-md-4">
-            <div class="panel panel-default">
-                <div class="panel-heading">Saldo Cuti</div>
-                <div class="panel-body">
-                    <div class="row">
-                        <div class="col-md-6" style="text-align: left;"><label>Saldo Cuti Tersedia :</label></div>
-                        <div class="col-md-3">-- <label>Hari</label></div>
-                    </div>
-                </div>
+<div class="row">
+    <h3>Pengajuan Cuti</h3>
+</div>
+<br />
+<br />
+<div class="row">
+    <div class="panel panel-default">
+        <div class="panel-heading">Saldo Cuti</div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-6" style="text-align: left;"><label>Saldo Cuti Tersedia :</label></div>
+                <div class="col-md-3">-- <label>Hari</label></div>
             </div>
         </div>
     </div>
-    <div class="row">
-      
-            <div class="panel panel-default">
-                <div class="panel-heading"><b>Detail Cuti</b></div>
-                <div class="panel-body">
-                    <div class="row">
-                        <div class="col-md-4" style="text-align: right;"><label>Jenis Cuti :</label></div>
-                        <div class="col-md-3">
-                            <select class="form-control" id="sel1">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>2</option>
-                                <option>2</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4" style="text-align: right;"><label>Tanggal Mulai :</label></div>
-                        <div class="col-md-4"><input type="date" class="form-control"></div>
-                        <div class="col-md-4">
-                            <input type="checkbox" name="vehicle2" value="Car"> Setengah Hari
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4" style="text-align: right;"><label>Tanggal Selesai :</label></div>
-                        <div class="col-md-4"><input type="date" class="form-control"></div>
-                        <div class="col-md-4">
-                            <input type="checkbox" name="vehicle2" value="Car"> Setengah Hari
-                        </div>
-                    </div>
-                    <br>
-                    <div class="row">
-                        <div class="col-md-4" style="text-align: right;"><label>Lama :</label></div>
-                        <div class="col-md-3">-- <label>Hari</label></div>
-                        <div class="col-md-5"><button type="button" class="btn btn-success btn-sm">Calculate Duration</button></div>
-                    </div>
+</div>
+<div class="row">
+    <div class="panel panel-default">
+        <div class="panel-heading"><b>Detail Cuti</b></div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-4" style="text-align: right;"><label>Jenis Cuti :</label></div>
+                <div class="col-md-3">
+                    <select class="form-control" id="sel1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>2</option>
+                        <option>2</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4" style="text-align: right;"><label>Tanggal Mulai :</label></div>
+                <div class="col-md-3"><input type="date" class="form-control"></div>
+                <div class="col-md-4">
+                    <input type="checkbox" name="vehicle2" value="Car"> Setengah Hari
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4" style="text-align: right;"><label>Tanggal Selesai :</label></div>
+                <div class="col-md-3"><input type="date" class="form-control"></div>
+                <div class="col-md-4">
+                    <input type="checkbox" name="vehicle2" value="Car"> Setengah Hari
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-4" style="text-align: right;"><label>Lama :</label></div>
+                <div class="col-md-3">-- <label>Hari</label></div>
+                <div class="col-md-5"><button type="button" class="btn btn-success btn-sm">Calculate Duration</button></div>
+            </div>
 
-                    <hr>
-                    <div class="row">
-                        <div class="col-md-4" style="text-align: right;"><label>Dokumen :</label></div>
-                        <div class="col-md-3">
-                            <input type="file" name="pic" accept="doc/*">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4" style="text-align: right;"><label>Keterangan :</label></div>
-                        <div class="col-md-3">
-                            <textarea rows="4" cols="50">
+            <hr>
+            <div class="row">
+                <div class="col-md-4" style="text-align: right;"><label>Dokumen :</label></div>
+                <div class="col-md-3">
+                    <input type="file" name="pic" accept="doc/*">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4" style="text-align: right;"><label>Keterangan :</label></div>
+                <div class="col-md-3">
+                    <textarea rows="4" cols="50">
 					</textarea>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                        <div class="col-md-12" style="text-align: right;">
-                            <button type="button" class="btn btn-Info">Save</button>
-                            <button type="button" class="btn btn-primary">Submit</button>
-                        </div>
-                    </div>
                 </div>
             </div>
-      
-
+            <hr>
+            <div class="row">
+                <div class="col-md-12" style="text-align: right;">
+                    <button type="button" class="btn btn-Info">Save</button>
+                    <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
     </div>
- 
+</div>
+@section Scripts{
+    <script type="text/javascript">
+        //$(document).ready(function () {
+        //    $("#result").hide();
+        //});
+
+        //$('#btnInput').on('click', function () {
+        //    var input = $('#txInput').val();
+
+        //    $.ajax({
+        //        type: "post",
+        //        url: "/Home/CheckTest4",
+        //        data: { input: input },
+        //        traditional: true,
+        //        success: function (result) {
+
+        //            $("#result").show();
+
+        //            var collectionList = result.ResultList;
+        //            console.log(collectionList)
+
+        //            //  document.getElementById("result").innerHTML = collectionOdd + "<br>" + collectionNonOdd;
+
+        //        }
+        //    });
+        //});
+
+        //$("#btnClear").on("click", function () {
+        //    $("#result").html("");
+        //    $("#result").hide();
+
+        //    $("#txInput").val("");
+        //});
+    </script>
+}
 

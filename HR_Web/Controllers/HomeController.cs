@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using HR_Web.Models;
+using Microsoft.AspNetCore.Authorization;
+using System.Security.Claims;
+using Microsoft.AspNetCore.Authentication;
 
 namespace HR_Web.Controllers
 {
@@ -22,7 +25,35 @@ namespace HR_Web.Controllers
         {
             return View();
         }
+        [Authorize]
+        public IActionResult Bunker()
+        {
+            return View();
+        }
+        public IActionResult Authenticate()
+        {
+            var randomClaims = new List<Claim>()
+            {
+                new Claim(ClaimTypes.Name,"Tom"),
+                new Claim(ClaimTypes.Email,"random@gmail.com"),
+                new Claim("Check Random","Every Room"),
+            };
 
+            var fixedClaims = new List<Claim>()
+            {
+                new Claim(ClaimTypes.Name,"Jerry"),
+                new Claim("Fixed Idea","Square"),
+            };
+
+            var randomIdentity = new ClaimsIdentity(randomClaims,"Random Identity");
+            var licenseIdentity = new ClaimsIdentity(fixedClaims,"Design");
+
+            var userPrincipal = new ClaimsPrincipal(new[] { randomIdentity , licenseIdentity});
+
+            HttpContext.SignInAsync(userPrincipal);
+
+            return RedirectToAction("Index");
+        }
         public IActionResult Privacy()
         {
             return View();

@@ -400,3 +400,4 @@ D:\Project\HR_Project\HR_Web\bin\Debug\netcoreapp3.1\System.Text.Json.dll
 D:\Project\HR_Project\HR_Web\obj\Debug\netcoreapp3.1\HR_Web.csproj.CoreCompileInputs.cache
 D:\Project\HR_Project\HR_Web\obj\Debug\netcoreapp3.1\HR_Web.MvcApplicationPartsAssemblyInfo.cs
 D:\Project\HR_Project\HR_Web\obj\Debug\netcoreapp3.1\HR_Web.MvcApplicationPartsAssemblyInfo.cache
+D:\Project\HR_Project\HR_Web\obj\Debug\netcoreapp3.1\Razor\Views\Home\Bunker.cshtml.g.cs
