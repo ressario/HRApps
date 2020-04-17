@@ -16,5 +16,7 @@ namespace HR_API.Data
         }
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Leave> Leaves { get; set; }
+        public DbSet<Payroll> Payrolls { get; set; }
+        public DbSet<Report> Reports { get; set; }
     }
 }

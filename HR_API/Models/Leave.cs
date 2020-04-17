@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace HR_API.Models
 {
-    public class Leave
+    public class Leave: Base
     {
     }
 }

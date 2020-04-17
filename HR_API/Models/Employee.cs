@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace HR_API.Models
 {
-    public class Employee
+    public class Employee: Base
     {
     }
 }
