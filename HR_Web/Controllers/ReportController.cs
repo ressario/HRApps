@@ -12,5 +12,17 @@ namespace HR_Web.Controllers
         {
             return View();
         }
+        public IActionResult Employee()
+        {
+            return View();
+        }
+        public IActionResult Leave()
+        {
+            return View();
+        }
+        public IActionResult Payroll()
+        {
+            return View();
+        }
     }
 }

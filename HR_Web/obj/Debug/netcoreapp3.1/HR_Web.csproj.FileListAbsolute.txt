@@ -421,3 +421,8 @@ D:\Project\HR_Project\HR_Web\obj\Debug\netcoreapp3.1\HR_Web.MvcApplicationPartsA
 D:\Project\HR_Project\HR_Web\obj\Debug\netcoreapp3.1\Razor\Views\Payroll\Index.cshtml.g.cs
 D:\Project\HR_Project\HR_Web\obj\Debug\netcoreapp3.1\Razor\Views\Payroll\Input.cshtml.g.cs
 D:\Project\HR_Project\HR_Web\obj\Debug\netcoreapp3.1\Razor\Views\Report\Index.cshtml.g.cs
+D:\Project\HR_Project\HR_Web\obj\Debug\netcoreapp3.1\Razor\Views\Leave\Approval.cshtml.g.cs
+D:\Project\HR_Project\HR_Web\obj\Debug\netcoreapp3.1\Razor\Views\Leave\Saldo.cshtml.g.cs
+D:\Project\HR_Project\HR_Web\obj\Debug\netcoreapp3.1\Razor\Views\Report\Employee.cshtml.g.cs
+D:\Project\HR_Project\HR_Web\obj\Debug\netcoreapp3.1\Razor\Views\Report\Leave.cshtml.g.cs
+D:\Project\HR_Project\HR_Web\obj\Debug\netcoreapp3.1\Razor\Views\Report\Payroll.cshtml.g.cs

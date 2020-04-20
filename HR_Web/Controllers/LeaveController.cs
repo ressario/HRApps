@@ -20,5 +20,13 @@ namespace HR_Web.Controllers
         {
             return View();
         }
+        public IActionResult Approval()
+        {
+            return View();
+        }
+        public IActionResult Saldo()
+        {
+            return View();
+        }
     }
 }

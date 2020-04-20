@@ -24,6 +24,7 @@
   <ItemGroup>
     <Folder Include="Utils\Email\" />
     <Folder Include="Utils\General\" />
+    <Folder Include="Utils\FileUpload\" />
     <Folder Include="Utils\Security\" />
   </ItemGroup>
 
