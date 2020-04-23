@@ -1,7 +1,85 @@
 ﻿
-@{
-    ViewData["Title"] = "Saldo";
-}
+<style>
+    .collapsible {
+        background-color: #777;
+        color: white;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+    }
 
-<h2>Saldo</h2>
+        .active, .collapsible:hover {
+            background-color: #555;
+        }
 
+    .content {
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+        background-color: #f1f1f1;
+    }
+</style>
+<div class="container">
+    <div class="row">
+        <div class="col-md-2" style="text-align: right;"><label>NIK :</label></div>
+        <div class="col-md-2"><input type="text" class="form-control" disabled></div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-2" style="text-align: right;"><label>Lokasi Kerja :</label></div>
+        <div class="col-md-3"><input type="text" class="form-control" disabled></div>
+    </div>
+<br>
+    <hr>
+    <button type="button" class="collapsible">Saldo tahun lalu</button>
+    <div class="content">
+        <ul>
+            <li>list</li>
+            <li>list</li>
+            <li>list</li>
+        </ul>
+    </div>
+    <button type="button" class="collapsible">Saldo tahun ini</button>
+    <div class="content">
+        <ul>
+            <li>list</li>
+            <li>list</li>
+            <li>list</li>
+        </ul>
+    </div>
+    <button type="button" class="collapsible">Saldo tersedia</button>
+    <div class="content">
+        <ul>
+            <li>list</li>
+            <li>list</li>
+            <li>list</li>
+        </ul>
+    </div>
+
+</div>
+
+    
+    
+
+    @section Scripts{
+        <script type="text/javascript">
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.display === "block") {
+                        content.style.display = "none";
+                    } else {
+                        content.style.display = "block";
+                    }
+                });
+            }
+        </script>
+    }
